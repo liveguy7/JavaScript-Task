@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script src="script2.js"></script>
+</head>
+
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Core Site</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                  </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item">
+                      <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Sign Up</a>
+                  </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Login</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+
+    <main class="container" role="main">
+        <div class="row">
+            <div class="col-md-8">
+
+        
+             <div class="container">
+              <form action="/index.html">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="firstname" name="firstname"><br>
+                <div id="firstNameHelpDiv"></div>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lastname" name="lastname"><br><br>
+                <div id="lastNameHelpDiv"></div>
+                <label for="lname">Email:</label><br>
+                <input type="text" id="email" name="email" ><br><br>
+                <div id="emailHelpDiv"></div>
+                <label for="lname">Income:</label><br>
+                <input type="text" id="income" name="income" ><br><br>
+                <div id="incomeHelpDiv"></div>
+                <input type="submit" value="Submit">
+              </form>
+               <img id="mainImage" height="50" width="50" src="pizza.jpg" /><br>
+               <div id="divContainer">
+                 <img src="pizza.jpg" height="50" width="50" />
+                 <img src="fries.jpg" height="50" width="50" />
+                 <img src="pizza.jpg" height="50" width="50" />
+                 <img src="fries.jpg" height="50" width="50"  />
+                 <img src="fries.jpg" height="50" width="50" />
+               </div>
+             </div>
+            <div id="divResult"> </div>
+           
+        
+            </div>
+            <div class="col-md-4">
+                <div class="content-section">
+                    <h3>Active Side View</h3>
+                    <p class='text-muted'>
+                        Welcome to Jello Posts
+                        <ul class="list-group">
+                        <li class="nav-item">
+                          <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
+                        </ul>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer class="border-top footer text-muted">
+       <div class="container">
+           &copy; 2024 - ASP.NETCoreFiles - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+       </div>
+   </footer>
+
+  </main>
+
+  @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
